@@ -1,0 +1,71 @@
+/* Estilo general para la tabla */
+.table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Estilo para las cabeceras de la tabla */
+.table thead th {
+    background-color: #e0f7fa;
+    color: #00796b;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo para las celdas de la tabla */
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #b2dfdb;
+    text-align: center;
+}
+
+/* Efecto de sombra para filas de la tabla al pasar el cursor */
+.table tbody tr {
+    transition: box-shadow 0.3s ease;
+}
+
+.table tbody tr:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e0f2f1;
+}
+
+/* Estilo para los botones dentro de la tabla */
+.table .btn {
+    margin: 0 5px;
+    font-size: 0.875rem;
+}
+
+/* Estilo para los enlaces de los archivos PDF */
+.table img {
+    vertical-align: middle;
+}
+
+/* Estilo para los mensajes de éxito */
+.alert-success {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #d0f0c0;
+    color: #388e3c;
+}
+
+/* Estilo para el campo de búsqueda */
+.small-input {
+    width: 200px;
+}
+
+/* Estilo para el botón de búsqueda */
+.small-button {
+    width: 100px;
+}
+
+/* Scroll horizontal solo en pantallas pequeñas */
+.table-responsive {
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        display: block;
+    }
+}
